@@ -1,3 +1,5 @@
+package function;
+
 import java.util.*;
 public class functionnnn {
    /* public static void printname(String name){
