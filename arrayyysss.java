@@ -190,5 +190,78 @@ public class arrayyysss {
 //        for(int i = arr.length-1; i>=0;i--){
 //            System.out.print(arr[i]+ " ");
 //        }
+
+
+        /// Neat and clean way for reversing the array by two pointer methods
+
+//        int[] arr = {12, 3, 4, 45, 63, 20, 30};
+//        reverse(arr);
+//        System.out.println("");
+//
+//        int b = arr.length - 1;
+//
+//
+//        for (int a = 0; a < b; a++) {
+//            int temp = arr[a];
+//            arr[a] = arr[b];
+//            arr[b] = temp;
+//            b--;
+//        }
+//     reverse(arr);
+
+
+
+/////  Rotate the given array by  given k steps
+//        ///  like arr = {12, 3, 4, 45, 63, 20, 30} and k = 3 should give {45, 63, 20, 30, 12, 3, 4}
+//        int[] arr = {12, 3, 4, 45, 63, 20, 30};
+//        printt(arr);   //calling printt method , here it will print orignal array
+//        System.out.println("");
+//
+//        int b = arr.length - 1;
+//
+//
+//        for (int a = 0; a < b; a++) {
+//          swap(arr,a,b);
+//          b--;
+//        }
+//        printt(arr); //this method will print the reverse of array {30,20,63,45,4,3,12}
+//        System.out.println("");
+//
+//        int k = 0;
+//        int l = 4;
+//        while (k<l){
+//          swap(arr,k,l);// we have now revere array like {30,20,63,45,4,3,12}
+//                     // so now we are rotating array by k steps by reversing specific part of array from 0th to 4th step by this we wil get array like {4,45, 63, 20, 30, 3,12}
+//            k++;
+//            l--;
+//        }
+//        int m =5;
+//        int n = 6;
+//        while (m<n){
+//           swap(arr,m,n); // we have now rotated array like {45, 63, 20, 30, 12, 3, 4} now we have to just reverse another part for getting {45, 63, 20, 30, 4,3,12}
+//            m++;
+//            n--;
+//        }
+//        printt(arr);
+
+
+
+
+
+
+    }
+
+    /// this method is for reversing the array using
+    public static void printt(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+           System.out.print(arr[i] + " ");
+        }
+    }
+
+    /// this method is for swapping the elements of two array elements
+    public static  void swap(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }

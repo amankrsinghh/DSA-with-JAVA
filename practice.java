@@ -83,6 +83,31 @@ System.out.println(" ");
 
                                             
 
+      ///  this is the neat and clean way to reverse the array
+//      int[] arr = {1, 2, 3, 4, 5};
+//      printt(arr);
+//      System.out.println("");
+//      int i = 0;
+//      int j = arr.length-1;
+//      while(i<j){
+//          swap(arr, i, j);
+//          i++;
+//          j--;
+//      }
+//      printt(arr);
 
-}    
+
+
+}
+//public static  void printt(int arr[]) {
+//    for (int i = 0; i < arr.length; i++) {
+//        System.out.print(arr[i] + " ");
+//    }
+//}
+
+//public static void swap( int[] arr,int i, int j){
+//      int temp = arr[i];
+//      arr[i] = arr[j];
+//      arr[j] = temp;
+//}
 }                  
