@@ -39,7 +39,7 @@ public class arrayyysss {
 //        }
 
 
-///        Q1- Given an array of the marks of students, if the marks of any student is than 35
+///        Q1- Given an array of the marks of students, if the marks of any student is less than 35
 ///        print its roll number. here refers to the index of the array
 
 //        System.out.println("enter the total students size");
@@ -149,7 +149,7 @@ public class arrayyysss {
 //        }
 
 
-///       Taking two array and get sum in pair of each element of both arrays like
+///       Taking two array and get sum in a pair of each element of both arrays like
 ///        arrA = {1, 2, 3, 4, 5} and arrB = {6, 7, 8, 9, 10} so sum = {7, 9, 11, 13, 15}
 //        int[] arrA = {1, 2, 3, 4, 5};
 //        int[] arrB = {6, 7, 8, 9, 10};
@@ -194,20 +194,20 @@ public class arrayyysss {
 
         /// Neat and clean way for reversing the array by two pointer methods
 
-//        int[] arr = {12, 3, 4, 45, 63, 20, 30};
-//        reverse(arr);
-//        System.out.println("");
-//
-//        int b = arr.length - 1;
-//
-//
-//        for (int a = 0; a < b; a++) {
-//            int temp = arr[a];
-//            arr[a] = arr[b];
-//            arr[b] = temp;
-//            b--;
-//        }
-//     reverse(arr);
+        int[] arr = {12, 3, 4, 45, 63, 20, 30};
+        printt(arr);
+        System.out.println("");
+
+        int b = arr.length - 1;
+
+
+        for (int a = 0; a < b; a++) {
+            int temp = arr[a];
+            arr[a] = arr[b];
+            arr[b] = temp;
+            b--;
+        }
+     printt(arr);
 
 
 
