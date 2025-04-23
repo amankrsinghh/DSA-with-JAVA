@@ -122,8 +122,17 @@ System.out.println(" ");
 //        for (int i = arr.length-1;i>=0;i--){
 //            System.out.print(arr[i]+" ");
 //        }
-         String a = "aman";
-        System.out.println(a.length());
+
+        int n = sc.nextInt();
+        int a = 0;
+        int b = 1;
+//a,b
+        for (int i = 2;i<=n;i++){
+            int temp = b;
+            b = a+b;
+            a = temp;
+            System.out.print(b+ " ");
+        }
 
     }
     public static int[] twosum(int[] arr, int target){
