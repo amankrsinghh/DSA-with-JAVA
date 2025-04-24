@@ -1,6 +1,8 @@
+package first_java;
+
 import java.util.Scanner;
 
-public class Some_logic {
+public class First_java {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 //        float a = sc.nextInt();// here is automatic type casting because a destination type is larger
