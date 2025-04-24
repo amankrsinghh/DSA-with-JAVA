@@ -99,9 +99,6 @@ public class First_java {
 //        palindrome(input);
 
 
-        System.out.println("Enetr 3 digit number ");
-        int n = sc.nextInt();
-
 ///  Q9. Check given number is armstrong or not
 //        System.out.println("Enter 3 digit number ");
 //        int n = sc.nextInt();
