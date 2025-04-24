@@ -103,6 +103,8 @@ public class First_java {
         int n = sc.nextInt();
 
 ///  Q9. Check given number is armstrong or not
+//        System.out.println("Enter 3 digit number ");
+//        int n = sc.nextInt();
 //        boolean res = armstrong(n);
 //        if(res == true){
 //            System.out.println("it is an Armstrong");
