@@ -210,6 +210,7 @@ public static void palindrome(String input){
             n = n / 10; // Number ko divide karte raho
         }
 
+
         if (sum == original) { // Original value ke saath compare karo
             return true;
         } else {
@@ -217,3 +218,5 @@ public static void palindrome(String input){
         }
     }
 }
+
+
