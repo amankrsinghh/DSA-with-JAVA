@@ -9,6 +9,7 @@ public class array_based {
         ////=================== Anagram ===============================////////
 //        System.out.println(anagram("aman","nama"));
 
+        ////  Inserting element in array ///
         char[] ar = new char[6];
 
         ar[0]= 'a';
