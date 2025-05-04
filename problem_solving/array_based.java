@@ -10,19 +10,20 @@ public class array_based {
 //        System.out.println(anagram("aman","nama"));
 
         ////  Inserting element in array ///
-        char[] ar = new char[6];
+//        char[] ar = new char[6];
+//
+//        ar[0]= 'a';
+//        ar[1]= 'b';
+//        ar[2]= 'c';
+//        ar[3]= 'd';
+//        ar[4]= 'e';
+//
+//        insert(ar, 2, 'f');
+//        for (int i = 0; i < ar.length; i++) {
+//            System.out.println(ar[i]);
+//        }
 
-        ar[0]= 'a';
-        ar[1]= 'b';
-        ar[2]= 'c';
-        ar[3]= 'd';
-        ar[4]= 'e';
-
-        insert(ar, 2, 'f');
-        for (int i = 0; i < ar.length; i++) {
-            System.out.println(ar[i]);
-        }
-
+//        System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
     }
 //    public static Boolean anagram ( String s, String t){
 //        String st1 = s.replaceAll("//s"," ");
@@ -46,12 +47,27 @@ public class array_based {
 
     /// /// ============== inserting an element in an array at desired position =================///////
 
-    public static void insert(char[] arr, int pos, char val) {
-        for (int i = arr.length - 1; i >= pos; i--) {
-            arr[i] = arr[i - 1];
-        }
-        arr[pos-1] = val;
-    }
+//    public static void insert(char[] arr, int pos, char val) {
+//        for (int i = arr.length - 1; i >= pos; i--) {
+//            arr[i] = arr[i - 1];
+//        }
+//        arr[pos-1] = val;
+//    }
 
+
+    ///  Two pointer valid palindrome ////
+    public static boolean isPalindrome(String s){
+          s = s.toLowerCase().replaceAll("[^A-Za-z0-9]","");
+          int i = 0;
+          int j = s.length()-1;
+          while(i<j){
+              if(s.charAt(i)!=s.charAt(j)){
+                  return false;
+              }
+              i++;
+              j--;
+          }
+          return true;
+    }
 
 }
