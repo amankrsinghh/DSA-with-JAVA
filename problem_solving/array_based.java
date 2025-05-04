@@ -23,8 +23,13 @@ public class array_based {
 //            System.out.println(ar[i]);
 //        }
 
+        /// ========== Two pointer valid palindrome ============////
 //        System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
     }
+
+    /// ////////================== FUNCTIONS =========================///////////
+
+    ///=======================  valid Anagram ==================////
 //    public static Boolean anagram ( String s, String t){
 //        String st1 = s.replaceAll("//s"," ");
 //        String st2 = t.replaceAll("//s"," ");
