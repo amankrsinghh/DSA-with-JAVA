@@ -128,6 +128,11 @@ public static int sub(int n ){
 //        System.out.println("Sum of entered numbers: " + sum);
     }
 
+    /// Take integer inputs till the user enters 0 and print the largest number from all.///
+    public static void largestNo(){
+        int n;
+        
+    }
 }
 
 
