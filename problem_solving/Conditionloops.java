@@ -36,7 +36,7 @@ public class Conditionloops {
 /// Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)///
 //        sumOfAll();
 
-
+largestNo();
 
     }
 
@@ -130,8 +130,19 @@ public static int sub(int n ){
 
     /// Take integer inputs till the user enters 0 and print the largest number from all.///
     public static void largestNo(){
+        Scanner sc = new Scanner(System.in);
         int n;
-        
+        int max= Integer.MIN_VALUE;
+        while(true){
+            n = sc.nextInt();
+            if(n==0){
+            break;
+            }
+            if(n>max){
+                 max=n;
+            }
+        }
+        System.out.println(max);
     }
 }
 
