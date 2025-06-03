@@ -127,11 +127,11 @@ System.out.println(" ");
         int a = 0;
         int b = 1;
 //a,b
-        for (int i = 2;i<=n;i++){
+        for (int i = 2; i <=n; i++) {
             int temp = b;
-            b = a+b;
+            b = a + b;
             a = temp;
-            System.out.print(b+ " ");
+            System.out.print(b + " ");
         }
 
     }
