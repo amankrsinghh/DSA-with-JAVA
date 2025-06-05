@@ -48,8 +48,14 @@ public class functionn {
 //        factorial(3);
 
         ///  ============= palindrome ================///
-        System.out.println(palindrome(121));
+//        System.out.println(palindrome(121));
 
+        ///  ================ simple pythogorean triplet ========///
+//        boolean res = pythagoreantriplet(3,4,5);
+//        System.out.println(res);
+
+        ///  prime number between given two number
+        primeNo(2,10);
     }
 
 
@@ -169,6 +175,44 @@ public class functionn {
         } else {
             return false;
         }
+    }
+
+    ///  pythagorean triplet
+    public static boolean pythagoreantriplet(int a, int b, int c) {
+        if (a < 0 || b < 0 || c < 0) {
+            return false;
+        }
+        int x = a * a;
+        int y = b * b;
+        int z = c * c;
+        if (x == y + z || y == z + x || z == x + y) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    public static void primeNo(int a, int b) {
+        if (a < 1 || b < 1) {
+            System.out.println("Invalid input, both numbers should be positive.");
+            return;
+        }
+
+        System.out.println("Prime numbers between " + a + " and " + b + ":");
+
+        for (int i = a + 1; i < b; i++) {
+            int j;// Har number ko check karenge
+            for ( j = 2; j < i; j++) {  // Pura range loop me chalayenge
+                if (i % j == 0) {
+                    break;
+                }
+            }
+            if (i==j && i > 1) {
+                System.out.print(i + " ");
+            }
+        }
+
     }
 
 
