@@ -202,8 +202,8 @@ public class functionn {
         System.out.println("Prime numbers between " + a + " and " + b + ":");
 
         for (int i = a + 1; i < b; i++) {
-            int j;// Har number ko check karenge
-            for ( j = 2; j < i; j++) {  // Pura range loop me chalayenge
+            int j;
+            for ( j = 2; j < i; j++) {
                 if (i % j == 0) {
                     break;
                 }
