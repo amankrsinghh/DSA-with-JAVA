@@ -55,7 +55,12 @@ public class functionn {
 //        System.out.println(res);
 
         ///  prime number between given two number
-        primeNo(2,10);
+//        primeNo(2,10);
+
+
+        ///  Write a function that returns the sum of first n natural numbers.
+        int res = sumofnaturalNo(3);
+        System.out.println(res);
     }
 
 
@@ -215,6 +220,14 @@ public class functionn {
 
     }
 
+    public static int sumofnaturalNo(int n )
+    {
+        int sumofN = 0;
+        for (int i = 1;i<=n;i++){
+            sumofN = sumofN+i;
+        }
+        return sumofN;
+    }
 
 }
 
