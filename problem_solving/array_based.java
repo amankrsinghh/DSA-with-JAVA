@@ -1,6 +1,7 @@
 package problem_solving;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class array_based {
     public static void main(String[] args) {
@@ -29,6 +30,11 @@ public class array_based {
         /// ====== build array with permutation ======///
 //        int[] nums = {0,2,1,5,3,4};
 //        int[] ans = buildArray(nums);
+//        System.out.println(Arrays.toString(ans));
+
+        /// concatination of array
+//        int[] arr = {2,3,4};
+//        int[] ans = concatenate(arr);
 //        System.out.println(Arrays.toString(ans));
 
     }
@@ -90,5 +96,18 @@ public class array_based {
 //
 //        return ans;
 //    }
+
+    ///  Concatenation of array
+    public static int[] concatenate(int[] nums){
+        int[] ans  = new int[2*nums.length];
+        for (int i = 0; i <nums.length;i++){
+            ans[i] = ans[i+nums.length] = nums[i];
+        }
+        return ans;
+
+        ///  this is super smart way to concatenate array
+//        int[] ans = IntStream.concat(Arrays.stream(nums),Arrays.stream(nums)).toArray();
+//        return ans;
+    }
 
 }
