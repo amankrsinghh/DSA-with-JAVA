@@ -219,7 +219,7 @@ public class functionn {
         }
 
     }
-
+//// Sum of first Natural Number
     public static int sumofnaturalNo(int n )
     {
         int sumofN = 0;

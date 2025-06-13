@@ -25,6 +25,12 @@ public class array_based {
 
         /// ========== Two pointer valid palindrome ============////
 //        System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
+
+        /// ====== build array with permutation ======///
+//        int[] nums = {0,2,1,5,3,4};
+//        int[] ans = buildArray(nums);
+//        System.out.println(Arrays.toString(ans));
+
     }
 
     /// ////////================== FUNCTIONS =========================///////////
@@ -61,18 +67,28 @@ public class array_based {
 
 
     ///  Two pointer valid palindrome ////
-    public static boolean isPalindrome(String s){
-          s = s.toLowerCase().replaceAll("[^A-Za-z0-9]","");
-          int i = 0;
-          int j = s.length()-1;
-          while(i<j){
-              if(s.charAt(i)!=s.charAt(j)){
-                  return false;
-              }
-              i++;
-              j--;
-          }
-          return true;
-    }
+//    public static boolean isPalindrome(String s){
+//          s = s.toLowerCase().replaceAll("[^A-Za-z0-9]","");
+//          int i = 0;
+//          int j = s.length()-1;
+//          while(i<j){
+//              if(s.charAt(i)!=s.charAt(j)){
+//                  return false;
+//              }
+//              i++;
+//              j--;
+//          }
+//          return true;
+//    }
+
+  ///  Build array from permutation
+//    public static int[] buildArray(int[] nums){
+//        int[] ans = new int[nums.length];
+//        for(int i = 0;i<nums.length;i++){
+//             ans[i] = nums[nums[i]];
+//        }
+//
+//        return ans;
+//    }
 
 }
