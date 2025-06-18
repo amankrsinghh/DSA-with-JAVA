@@ -37,14 +37,25 @@ public class array_based {
 //        int[] ans = concatenate(arr);
 //        System.out.println(Arrays.toString(ans));
 
+        int[][] arr = new int[2][2];
+        arr[0][0] = 1;
+        arr[0][1] = 2;
+        arr[1][0] = 3;
+        arr[1][1] = 4;
+        for (int i = 0; i< arr.length;i++){
+
+        }
+
+
+
     }
 
     /// ////////================== FUNCTIONS =========================///////////
 
     ///=======================  valid Anagram ==================////
 //    public static Boolean anagram ( String s, String t){
-//        String st1 = s.replaceAll("//s"," ");
-//        String st2 = t.replaceAll("//s"," ");
+//        String st1 = s.replaceAll("\\s"," ");
+//        String st2 = t.replaceAll("\\s"," ");
 //
 //        if(st1.length() != st2.length()){
 //            return  false;
@@ -98,16 +109,15 @@ public class array_based {
 //    }
 
     ///  Concatenation of array
-    public static int[] concatenate(int[] nums){
-        int[] ans  = new int[2*nums.length];
-        for (int i = 0; i <nums.length;i++){
-            ans[i] = ans[i+nums.length] = nums[i];
-        }
-        return ans;
+//    public static int[] concatenate(int[] nums){
+//        int[] ans  = new int[2*nums.length];
+//        for (int i = 0; i <nums.length;i++){
+//            ans[i] = ans[i+nums.length] = nums[i];
+//        }
+//        return ans;
 
         ///  this is super smart way to concatenate array
 //        int[] ans = IntStream.concat(Arrays.stream(nums),Arrays.stream(nums)).toArray();
 //        return ans;
+//    }
     }
-
-}
