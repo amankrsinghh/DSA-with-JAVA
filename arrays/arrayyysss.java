@@ -193,21 +193,21 @@ public class arrayyysss {
 
 
         /// Neat and clean way for reversing the array by two pointer methods
-
-        int[] arr = {12, 3, 4, 45, 63, 20, 30};
-        printt(arr);
-        System.out.println("");
-
-        int b = arr.length - 1;
-
-
-        for (int a = 0; a < b; a++) {
-            int temp = arr[a];
-            arr[a] = arr[b];
-            arr[b] = temp;
-            b--;
-        }
-     printt(arr);
+//
+//        int[] arr = {12, 3, 4, 45, 63, 20, 30};
+//        printt(arr);
+//        System.out.println("");
+//
+//        int b = arr.length - 1;
+//
+//
+//        for (int a = 0; a < b; a++) {
+//            int temp = arr[a];
+//            arr[a] = arr[b];
+//            arr[b] = temp;
+//            b--;
+//        }
+//     printt(arr);
 
 
 
@@ -244,8 +244,39 @@ public class arrayyysss {
 //        }
 //        printt(arr);
 
+///  2D array
+        ///  index vise initialization
+//        int[][] arr = new int[2][2];
+//        arr[0][0] = 1;
+//        arr[0][1] = 2;
+//        arr[1][0] = 3;
+//        arr[1][1] = 4;
+
+        /// direct Initialization
+        int [][] arr = {
+                {1,2,3},
+                {1,2,3,4,5},
+                {1,2,4,5}
+        };
+
+        /// print array
+//        for(int i = 0 ; i<arr.length;i++){
+//            for(int j = 0;j<arr[i].length;j++){
+//                System.out.print(arr[i][j]);
+//            }
+//            System.out.println();
+//        }
 
 
+
+/// print by using Arrays.toString
+//        for (int i = 0; i< arr.length;i++){
+//            System.out.println(Arrays.toString(arr[i]));
+//        }
+///  enhanced loop
+//        for (int[] n :arr){
+//            System.out.println(Arrays.toString(n));
+//        }
 
 
 
