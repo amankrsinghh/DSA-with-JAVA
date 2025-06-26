@@ -37,7 +37,28 @@ public class array_based {
 //        int[] ans = concatenate(arr);
 //        System.out.println(Arrays.toString(ans));
 
+     /// Running Sum of 1d Array
+//        int [] nums = {1,2,3,4,5};
+//        System.out.println(Arrays.toString(running_array(nums)));
 
+
+        /// Richest Customer Wealth
+//        int nums[][]={
+//                {1,2,3},
+//                {2,1,4},
+//                {4,1,1}
+//        };
+//        System.out.println(wealthMan(nums));
+
+
+        ///  Shuffle the Array
+        int[] nums = {1,1,2,2};
+        int n = 2;
+//        int[] res = shuffleArr(nums,n);
+//        for(int item : res){
+//            System.out.print(item+ " ");
+//        }
+        System.out.println(Arrays.toString(shuffleArr(nums,n)));
 
     }
 
@@ -107,8 +128,46 @@ public class array_based {
 //        }
 //        return ans;
 
-        ///  this is super smart way to concatenate array
+        ///  this is a super smart way to concatenate array
 //        int[] ans = IntStream.concat(Arrays.stream(nums),Arrays.stream(nums)).toArray();
 //        return ans;
 //    }
+
+        ///Running Sum of 1d Array
+//    public  static int[] running_array(int[] nums){
+//        int sum = 0;
+//
+//        int [] runningarray = new int[nums.length];
+//        for(int i = 0;i< nums.length;i++){
+//            runningarray[i] = sum = sum+ nums[i];
+//        }
+//        return runningarray;
+//    }
+
+    /// Richest Customer Wealth
+
+//    public static int wealthMan(int[][] nums){
+//        int wealth = 0;
+//        for(int i = 0;i<nums.length;i++){
+//            int maxWealth = 0;
+//            for(int j = 0;j<nums[i].length;j++){
+//                maxWealth += nums[i][j];
+//            }
+//            if(wealth<maxWealth){
+//                wealth=maxWealth;
+//            }
+//
+//        }
+//        return wealth;
+//    }
+
+    public static int[] shuffleArr(int[]nums,int n){
+        int[] ans = new int[2*n];
+        for(int i = 0;i<n;i++){
+            ans[2*i] = nums[i]; // for x1,x2,x3.........
+            ans[(2*i)+1]= nums[i+n]; //  for y1,y2,y3.........
+        }
+        return ans;
+    }
+
     }
