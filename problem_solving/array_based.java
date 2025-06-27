@@ -1,6 +1,8 @@
 package problem_solving;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.IntStream;
 
 public class array_based {
@@ -52,14 +54,23 @@ public class array_based {
 
 
         ///  Shuffle the Array
-        int[] nums = {1,1,2,2};
-        int n = 2;
+//        int[] nums = {1,1,2,2};
+//        int n = 2;
 //        int[] res = shuffleArr(nums,n);
 //        for(int item : res){
 //            System.out.print(item+ " ");
 //        }
-        System.out.println(Arrays.toString(shuffleArr(nums,n)));
+//        System.out.println(Arrays.toString(shuffleArr(nums,n)));
 
+/// find count of even digits in a array
+//        int[] nums = {203,2024,4,13,1111};
+//        System.out.println(findNumbers(nums));
+
+
+        ///  candies
+        int [] candies = {2,3,5,1,3};
+        int extracandies = 3;
+        System.out.println(kidsWithCandies(candies,extracandies));
     }
 
     /// ////////================== FUNCTIONS =========================///////////
@@ -161,13 +172,53 @@ public class array_based {
 //        return wealth;
 //    }
 
-    public static int[] shuffleArr(int[]nums,int n){
-        int[] ans = new int[2*n];
-        for(int i = 0;i<n;i++){
-            ans[2*i] = nums[i]; // for x1,x2,x3.........
-            ans[(2*i)+1]= nums[i+n]; //  for y1,y2,y3.........
+//    public static int[] shuffleArr(int[]nums,int n){
+//        int[] ans = new int[2*n];
+//        for(int i = 0;i<n;i++){
+//            ans[2*i] = nums[i]; // for x1,x2,x3.........
+//            ans[(2*i)+1]= nums[i+n]; //  for y1,y2,y3.........
+//        }
+//        return ans;
+//    }
+
+//    public static int findNumbers(int[] nums) {
+//        int res = 0;
+//        for(int i = 0;i<nums.length;i++){
+//            int count = 0;
+//            while(nums[i]>0){
+//               int dig = nums[i]%10;
+//                count++;
+//                nums[i]= nums[i]/10;
+//
+//            }
+//            if(count%2==0){
+//                res++;
+//                count =0;
+//            }
+//
+//        }
+//
+//       return res;
+//    }
+    public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        List<Boolean> res = new ArrayList<>();
+        int max = candies[0];
+        for (int i = 0; i < candies.length; i++) {
+            max = Math.max(max, candies[i]);
         }
-        return ans;
+        int finalmax = max;
+
+        for (int i = 0; i < candies.length; i++) {
+            if (candies[i] + extraCandies >= finalmax) {
+                res.add(true);
+            } else {
+                res.add(false);
+            }
+        }
+
+
+        return res;
     }
+
 
     }
