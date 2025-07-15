@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Dsa_prac {
@@ -40,8 +41,20 @@ public class Dsa_prac {
 //        System.out.println(factorial(5));
 
         /// Calculate Average Of N Numbers
-        int num = sc.nextInt();
-        System.out.println( sumAverage(num));
+//        int num = sc.nextInt();
+//        System.out.println( sumAverage(num));
+
+
+//        int [] nums  = {2,6,7,10,12,23};
+//        System.out.println();
+////        System.out.println(secondLarge(nums));
+//        threeLarge(nums);
+
+//        int [] nums = {1,0,1,0,1,1,1};
+//
+//        System.out.println( consitiveOnce(nums));
+
+
 
 
     }
@@ -152,14 +165,55 @@ public class Dsa_prac {
 //        return fact;
 //    }
 
-    public static float sumAverage(int num){
-        int sum = 0;
-        float avg =0;
-        for(int i =0 ; i<=num;i++){ 
-           sum +=i+sum;
-        }
-        avg = sum/num;
+//    public static float sumAverage(int num){
+//        int sum = 0;
+//        float avg =0;
+//        for(int i =0 ; i<=num;i++){
+//           sum +=i+sum;
+//        }
+//        avg = sum/num;
+//
+//return avg;
+//    }
 
-return avg;
-    }
+//    public static int secondLarge( int [] nums){
+//
+//        int largeNum = 0;
+//        int secLargeNum =0;
+//
+//
+//        for(int number : nums){
+//            if(number > largeNum){
+//                secLargeNum = largeNum;
+//                largeNum=number;
+//
+//            }if(secLargeNum < largeNum && largeNum != secLargeNum){
+//                secLargeNum=secLargeNum;
+//            }
+//        }
+//
+//        return secLargeNum;
+//    }
+
+//
+//    public static  void   threeLarge(int [] nums ){
+//
+//        Arrays.sort(nums);
+//        int n = nums.length;
+//        System.out.println(nums[n-1]*nums[n-2]*nums[n-3] );
+//
+//    }
+
+//    public static  int consitiveOnce(int nums []){
+//
+//        int count =0;
+//        for(int i  = 0; i < nums.length; i++){
+//            if(nums[i]==1){
+//                count++;
+//            }
+//        }
+//        return count;
+//
+//    }
+
 }

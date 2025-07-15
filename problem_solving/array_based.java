@@ -39,7 +39,7 @@ public class array_based {
 //        int[] ans = concatenate(arr);
 //        System.out.println(Arrays.toString(ans));
 
-     /// Running Sum of 1d Array
+        /// Running Sum of 1d Array
 //        int [] nums = {1,2,3,4,5};
 //        System.out.println(Arrays.toString(running_array(nums)));
 
@@ -68,10 +68,31 @@ public class array_based {
 
 
         ///  candies
-        int [] candies = {2,3,5,1,3};
-        int extracandies = 3;
-        System.out.println(kidsWithCandies(candies,extracandies));
+//        int [] candies = {2,3,5,1,3};
+//        int extracandies = 3;
+//        System.out.println(kidsWithCandies(candies,extracandies));
+
+//        int[] nums = {1,1,2,3,2,3};
+//        System.out.println(good_pair(nums));
+
+//        /// reverse array
+//        int[] nums = {1,2,3,4,5};
+//        System.out.println(Arrays.toString(reverseArr(nums)));
+
+
+        ///  flip the image
+//        int[][] image = {
+//                {1, 1, 0},
+//                {1, 0, 1},
+//                {0, 0, 0}
+//        };
+//
+// int [][] newArr = flipAndInvertImage(image);
+//        for(int i = 0; i<newArr.length;i++){
+//            System.out.println(Arrays.toString(newArr[i]));
+//        }
     }
+
 
     /// ////////================== FUNCTIONS =========================///////////
 
@@ -121,7 +142,7 @@ public class array_based {
 //          return true;
 //    }
 
-  ///  Build array from permutation
+    ///  Build array from permutation
 //    public static int[] buildArray(int[] nums){
 //        int[] ans = new int[nums.length];
 //        for(int i = 0;i<nums.length;i++){
@@ -129,6 +150,7 @@ public class array_based {
 //        }
 //
 //        return ans;
+//
 //    }
 
     ///  Concatenation of array
@@ -139,12 +161,12 @@ public class array_based {
 //        }
 //        return ans;
 
-        ///  this is a super smart way to concatenate array
+    ///  this is a super smart way to concatenate array
 //        int[] ans = IntStream.concat(Arrays.stream(nums),Arrays.stream(nums)).toArray();
 //        return ans;
 //    }
 
-        ///Running Sum of 1d Array
+    ///Running Sum of 1d Array
 //    public  static int[] running_array(int[] nums){
 //        int sum = 0;
 //
@@ -200,25 +222,79 @@ public class array_based {
 //
 //       return res;
 //    }
-    public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-        List<Boolean> res = new ArrayList<>();
-        int max = candies[0];
-        for (int i = 0; i < candies.length; i++) {
-            max = Math.max(max, candies[i]);
-        }
-        int finalmax = max;
 
-        for (int i = 0; i < candies.length; i++) {
-            if (candies[i] + extraCandies >= finalmax) {
-                res.add(true);
-            } else {
-                res.add(false);
-            }
-        }
+    /// ================= kids with candies =======================////
+//    public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+//        List<Boolean> res = new ArrayList<>();
+//        int max = candies[0];
+//        for (int i = 0; i < candies.length; i++) {
+//            max = Math.max(max, candies[i]);
+//        }
+//        int finalmax = max;
+//
+//        for (int i = 0; i < candies.length; i++) {
+//            if (candies[i] + extraCandies >= finalmax) {
+//                res.add(true);
+//            } else {
+//                res.add(false);
+//            }
+//        }
+//
+//
+//        return res;
+//    }
 
 
-        return res;
-    }
+//    public static int good_pair(int[] nums){
+//        int max = 0;
+//        for (int i = 0; i < nums.length; i++) {
+//            for (int j= i+1; j < nums.length; j++) {
+//                if (nums[i]==nums[j]){
+//                    max++;
+//                }
+//
+//            }
+//
+//        }
+//        return max;
+//    }
 
 
-    }
+//    public int[] createTargetArray(int[] nums, int[] index) {
+//        ArrayList<Integer> newarr = new ArrayList<>();
+//
+//        for(int i = 0;i<nums.length;i++){
+//            newarr.add(index[i],nums[i]);
+//        }
+//
+//
+//        newarr.toArray(new Integer[0]);
+//        return newarr;
+//    }
+//
+      /// flip Image
+//    public static int[][] flipAndInvertImage(int[][] image) {
+//
+//        int[][] newarr = new int[image.length][image.length];
+//        int m = image.length;
+//        for (int i = 0; i < m; i++) {
+//            int n = image[i].length;
+//            for (int j = 0; j < n; j++) {
+//                newarr[i][j] = image[i][n - 1 - j] ^ 1;
+//            }
+//        }
+//        return newarr;
+//    }
+     ///   reverse Array
+//    public static int[]  reverseArr(int[] nums){
+//        int[] newArr = new int[nums.length];
+//        int m = nums.length;
+//        for(int i = 0; i<m;i++){
+//            newArr[m-1-i] =   nums[i];
+//        }
+//       return newArr;
+//    }
+
+
+}
+
