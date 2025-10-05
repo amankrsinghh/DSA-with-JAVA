@@ -21,6 +21,8 @@ public class Encapsulationn {
         System.out.println(s1.getName());
 
 
+
+
     }
 
 }
