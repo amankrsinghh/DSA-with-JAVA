@@ -3,6 +3,7 @@ package arrays;
 import java.util.*;
 
 public class arrayyysss {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,8 +12,6 @@ public class arrayyysss {
 //        System.out.println(arr[2]);  // im passing arr[2] , 2 is index it will print the 2th index element of the array
 //        System.out.println("the length of array "+  i); // length
 //
-
-
         ///####/// traverse all element of array and print it all
 //        int [] arr = {5,4,6,3,10,23,56};
 //        for (int i = 0 ;i < arr.length;i++) {
@@ -253,13 +252,15 @@ public class arrayyysss {
 //        arr[1][1] = 4;
 
         /// direct Initialization
-        int [][] arr = {
-                {1,2,3},
-                {1,2,3,4,5},
-                {1,2,4,5}
+        int[][] arr = {
+            {1, 2, 3},
+            {1, 2, 3, 4, 5},
+            {1, 2, 4, 5}
         };
 
-        /// print array
+    
+
+    /// print array
 //        for(int i = 0 ; i<arr.length;i++){
 //            for(int j = 0;j<arr[i].length;j++){
 //                System.out.print(arr[i][j]);
@@ -283,14 +284,14 @@ public class arrayyysss {
     }
 
     /// this method is for reversing the array using
-    public static void printt(int[] arr){
+    public static void printt(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-           System.out.print(arr[i] + " ");
+            System.out.print(arr[i] + " ");
         }
     }
 
     /// this method is for swapping the elements of two array elements
-    public static  void swap(int[] arr, int i, int j){
+    public static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;

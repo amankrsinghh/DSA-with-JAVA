@@ -28,10 +28,10 @@ public class Conditionloops {
 //        fibonacci(n);
 
         ///  subtract the product nd the sum of the given integer ///
-//        System.out.println("Enter the digit");
-//        int n = sc.nextInt();
-//        int res = sub(n);
-//        System.out.println("Subtract of product and sum: "+res);
+       System.out.println("Enter the digit");
+       int n = sc.nextInt();
+       int res = sub(n);
+       System.out.println("Subtract of product and sum: "+res);
 
 /// Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)///
 //        sumOfAll();

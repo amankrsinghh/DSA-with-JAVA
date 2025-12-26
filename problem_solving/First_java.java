@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class First_java {
 
-    public static void main(String[] args) {
+     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 //        float a = sc.nextInt();// here is automatic type casting because a destination type is larger
 //        than the source type and both type is compatible
@@ -100,14 +100,14 @@ public class First_java {
 
 
 ///  Q9. Check given number is armstrong or not
-//        System.out.println("Enter 3 digit number ");
-//        int n = sc.nextInt();
-//        boolean res = armstrong(n);
-//        if(res == true){
-//            System.out.println("it is an Armstrong");
-//        }else{
-//            System.out.println("it's not an Armstrong");
-//        }
+        System.out.println("Enter 3 digit number ");
+        int n = sc.nextInt();
+        boolean res = armstrong(n);
+        if(res == true){
+            System.out.println("it is an Armstrong");
+        }else{
+            System.out.println("it's not an Armstrong");
+        }
 
 
 
