@@ -22,7 +22,7 @@ public class Practice {
         Practice ps = new Practice();
         int[] result = ps.twoSum(nums, target);
         System.out.println("Indices: " + result[0] + ", " + result[1]);
-
+  // hi my name is aman kumar singh 
     }
    
 }
